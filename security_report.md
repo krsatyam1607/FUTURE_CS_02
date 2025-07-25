@@ -90,6 +90,7 @@ This task involved monitoring security alerts using the Elastic Stack (Elasticse
 | **Evidence**         | Kibana dashboard screenshot; exported log lines saved                                       |
 | **Recommendations**  | Switch to SSH key authentication; regularly audit logins and accounts                       |
 <img src="assets/0.png" width="800" />
+
 # Appendix (Example kibana queries & images)
 
 ### 1. Find all failed SSH login attempts
