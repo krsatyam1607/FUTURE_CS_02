@@ -1,13 +1,21 @@
  
 # Content Map
 
-- [Task Overview](#task-overview)
-- [Tools and Environment](#tools-and-environment)
-- [How the Investigation Was Done](#how-the-investigation-was-done)
+- [Summary](#summary)
+- [Environment Setup](#environment-setup)
+  - [Prerequisites](#prerequisites)
+  - [Services to Enable and Start](#services-to-enable-and-start)
+  - [Configuration](#configuration)
+  - [Verification](#verification)
+  - [Security](#security)
+- [How the investigation was done](#how-the-investigation-was-done)
 - [Incident Summary](#incident-summary)
 - [Detailed Incident Report](#detailed-incident-report)
-- [Appendix (Example Kibana Queries \& Images)](#appendix-example-kibana-queries--images)
+- [Appendix (Example Kibana Queries & Images)](#appendix-example-kibana-queries--images)
+- [Visualizations and Graphs](#visualizations-and-graphs)
 - [Mitigation](#mitigation)
+- [Conclusion](#conclusion)
+
 
 # Summary
 
