@@ -140,21 +140,25 @@ Visualize key log data in Kibana to spot patterns and suspicious activity quickl
 - **Chart Type:** Donut Chart 
 - **Field:** `log_level`  
 <img src="assets/log_level.png" width="800" />
+
 ## 2. Top source IP addresses
 - **Purpose:** Identifies IPs generating most logs or failures.  
 - **Chart Type:** Bar Vertical Chart
 - **Field:** `src_ip`  
 <img src="assets/ipaddresses.png" width="800" />
+
 ## 3. Frequent Usernames
 - **Purpose:** Highlights users appearing most in logs, e.g., target accounts.  
 - **Chart Type:** Bar Vertical Chart
 - **Field:** `username`  
 <img src="assets/Username.png" width="800" />
+
 ## 4. Common log messages
 - **Purpose:** Shows frequent log messages to identify common events or alerts.  
 - **Chart Type:** Tree Map
 - **Field:** `message`  
 <img src="assets/message.png" width="800" />
+
 ## How did i created these in Kibana
 1. Go to **Visualize** > **Create Visualization**.  
 2. Choose chart type and your index pattern (e.g., `sample_security_logs*`).  
