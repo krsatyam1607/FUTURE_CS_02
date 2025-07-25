@@ -89,7 +89,7 @@ This task involved monitoring security alerts using the Elastic Stack (Elasticse
 | **Status**           | Remediated                                                                                  |
 | **Evidence**         | Kibana dashboard screenshot; exported log lines saved                                       |
 | **Recommendations**  | Switch to SSH key authentication; regularly audit logins and accounts                       |
-![[0.png]]
+<img src="images/0.png" width="800" />
 # Appendix (Example kibana queries & images)
 
 ### 1. Find all failed SSH login attempts
@@ -97,7 +97,7 @@ This task involved monitoring security alerts using the Elastic Stack (Elasticse
 ```kql
 service: "sshd" and log_level: "FAILURE"
 ```
-![[1.png]]
+<img src="images/1.png" width="800" />
 
 
 ### 2. see all sudo (Privileged) commands
@@ -105,14 +105,14 @@ service: "sshd" and log_level: "FAILURE"
 ```kql
 service:  "sudo"
 ```
-![[2.png]]
+<img src="images/2.png" width="800" />
 
 ### 3. Search for specific user’s Login attempts
 
 ```kql
 username : "john"
 ```
-![[3.png]]
+<img src="images/3.png" width="800" />
 
 
 ### 4. Show system warnings and errors Only
@@ -121,14 +121,14 @@ username : "john"
 log_level:  "WARNING" or log_level: "ERROR"
 ```
 
-![[4.png]]
+<img src="images/4.png" width="800" />
 
 ### 5. Find all events from a certain IP
 
 ```kql
 src_ip: "192.168.1.100"
 ```
-![[5.png]]
+<img src="images/5.png" width="800" />
 
 
 # Visualizations and Graphs 
@@ -138,22 +138,22 @@ Visualize key log data in Kibana to spot patterns and suspicious activity quickl
 - **Purpose:** Shows counts of logs by severity (INFO, WARNING, ERROR, FAILURE).  
 - **Chart Type:** Donut Chart 
 - **Field:** `log_level`  
-![[log_level.png]]
+<img src="images/log_level.png" width="800" />
 ## 2. Top source IP addresses
 - **Purpose:** Identifies IPs generating most logs or failures.  
 - **Chart Type:** Bar Vertical Chart
 - **Field:** `src_ip`  
-![[ipaddresses.png]]
+<img src="images/ipaddresses.png" width="800" />
 ## 3. Frequent Usernames
 - **Purpose:** Highlights users appearing most in logs, e.g., target accounts.  
 - **Chart Type:** Bar Vertical Chart
 - **Field:** `username`  
-![[Username.png]]
+<img src="images/Username.png" width="800" />
 ## 4. Common log messages
 - **Purpose:** Shows frequent log messages to identify common events or alerts.  
 - **Chart Type:** Tree Map
 - **Field:** `message`  
-![[message.png]]
+<img src="images/message.png" width="800" />
 ## How did i created these in Kibana
 1. Go to **Visualize** > **Create Visualization**.  
 2. Choose chart type and your index pattern (e.g., `sample_security_logs*`).  
